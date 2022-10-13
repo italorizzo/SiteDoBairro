@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/destaques.css">
+    <link rel="stylesheet" href="assets/style/menu.css">
+    <link rel="stylesheet" href="assets/style/rodape.css">
+    <link rel="stylesheet" href="assets/style/geral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon/logo_icon.ico" type="image/x-icon">
+    <title>PIRITUBA - destaques</title>
+    <!--Ajustar a resposividade-->
+</head>
+<body>
+    <header>
+        <div class="proporcao-menu logo-pagina-inicial" >
+            <a href="home.html"><img src="icon/LOGO.png" alt="logo"></a>
+        </div>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu" class="overlay-button"><img class="form_bt_menu" src="icon/menu.png" alt="imagem botão menu"></label>
+        <script src="assets/scripts/menu.js" defer></script>
+        <div class="blur-fundo"></div>
+        <nav class="proporcao-menu abas-pagina-inicial">
+            <ul class="itens-menu">
+                <li><a href="home.html" id="home"><span>01</span> home</a></li>
+                <li><a href="bairro.html" class="encontro" id="bairro"><span>02</span> bairro</a></li>
+                <li><a href="destaques.html" id="destaques"><span>03</span> destaques</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteúdo">
+        <table>
+            <tr>
+                <td class="video-jaraguá" colspan="2">
+                    <h2>DESTAQUE DE PIRITUBA - PICO DO JARAGUÁ</h2>
+                    <iframe class="video" src="https://www.youtube.com/embed/2p7KFQvk-lY?controls=0&showinfo=1&autoplay=1&loop=1&modestbranding=1&cc_load_policy=0&disablekb=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay; controls; rel; modestbranding; showinfo; encrypted-media;"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td class="informações infos">
+                    <p class="texto">O Pico do Jaraguá é o ponto mais alto de São Paulo, chegando a uma altitude de 1.135 metros. Localizado no bairro do Jaraguá, dentro do distrito Pirituba, a oeste da serra da Cantareira, além de ter como vizinhos os bairros de Perus e Pirituba e o município de Osasco. Nos seus arredores, foi criado o Parque Estadual do Jaraguá, para conservação da área. Sendo um dos principais pontos turísticos do distrito...</p>
+                    <p class="fonte">Fonte: www.picodojaragua.com.br</p>
+                    <button class="saiba_mais">saiba mais</button>
+                </td>
+                <td class="mapa infos">
+                    <div class="mapa-centralizado">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14640.238609381075!2d-46.77403276621902!3d-23.458312671469248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefc6ae642f6e9%3A0x8ee77220162d411a!2sPico%20do%20Jaragu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1662578743823!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="fonte-maps">Fonte: www.google.com.br/maps/</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <img src="icon/LOGO_rodape.png" alt="">
+            </div>
+            <div>
+                <h2>Páginas</h2>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="bairro.html">bairro</a></li>
+                    <li><a href="destaques.html">destaques</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Sobre o site</h2>
+                <p>
+                    Site criado atraves do projeto dado pela academia de PicPay da escola Geminare. Intuito do site, é mostrar os conceitos aprendidos em aula e falar um pouco sobre o bairro que você mora.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/italorizzo" target="_blank"><img src="icon/github.png" alt=""></a>
+                <button onclick="contato()">contato</button>
+                <script>
+                    function contato(){
+                        open("mailto:italo.rizzo@germinare.org.br?subject=Contato do Site do Bairro")
+                    }
+                </script>
+            </div>
+        </section>
+        <section>
+            <span>© 2022 Copyright - Ítalo Rizzo</span>
+        </section>
+    </footer>
+</body>
+</html>

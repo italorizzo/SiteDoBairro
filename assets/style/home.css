@@ -1,0 +1,120 @@
+body{
+    background-image: url(../../image/site_img/background-home.png);
+}
+.itens-menu li:nth-child(1){
+    border-bottom: 3px solid white;
+}
+main{
+    font-weight: lighter;
+
+    margin: auto;
+    width: 80%;
+    height: 10.5vw;
+
+    display: table;
+}
+.infos{
+    display: table-cell;
+    position: relative;
+    animation: entradaInfo 1s;
+}
+.informações{
+    width: 50%;
+
+    vertical-align: middle;
+    color: #f2f2f2;
+    font-weight: lighter;
+}
+#btn-infos{
+    margin-top: 20vw;
+}
+#explorar{
+    width: 15vw;
+    height: 15vw;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+}
+.img-btn{
+    opacity: 0.8;
+    mix-blend-mode: luminosity;
+    backdrop-filter: blur(100px);
+    width: 100%;    
+    border-radius: 50%;
+}
+.informações h1{
+    font-family: 'Bellefair', serif;
+    font-weight: lighter;
+    line-height: 10px;
+    font-size: 5vw;
+}
+.informações h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: lighter;
+    color: #BABFD9;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+}
+.informações p{
+    width: 100%;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 2vw;
+}
+.texto{
+    color: #BABFD9;
+    font-size: 1.3vw;
+}
+
+.fonte{
+    font-size: 1vw;
+}
+
+@media(max-width: 1000px){
+    .informações h1{
+        font-size: 45px;
+    }
+    .informações h2{
+        font-size: 25px;
+    }
+    .informações p{
+        font-size: 20px;
+        line-height: 30px;
+    }       
+    main{
+        padding-top: 70px;
+    }
+
+    .infos{
+        display: inline;
+    }
+    #btn-infos{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    #explorar{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media(max-width: 600px){
+    .informações h1{
+        font-size: 40px;
+    }
+    .informações h2{
+        font-size: 20px;
+    }
+    .informações p{
+        font-size: 15px;
+    }
+    #explorar{
+        width: 150px;
+        height: 150px;
+        
+        float: unset;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/logar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="icon/logo_icon.ico" type="image/x-icon">
+    <script src="assets/scripts/logar.js" defer></script>
+    <title>PIRITUBA</title>
+</head>
+<body>
+    <main class="areaLogar">
+        <div class="titulo">
+            <h1>criar conta</h1>
+        </div>
+        <form class="cadastro" >
+            <div class="nome">
+                <div>
+                    <input type="text" placeholder="NOME" name="nome" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="SOBRENOME" name="sobrenome" required>
+                </div>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="EMAIL" name="email" id="email" required>
+            </div>
+            <div class="senha senha2">
+                <input onchange="confereSenha()" type="password" placeholder="DIGITE UMA SENHA" minlength="8" name="senha">
+            </div>
+            <div class="senha senha1">
+                <input onchange="confereSenha()" placeholder="REPITA A SENHA" type="password" name="confirmar">
+            </div>
+            <div>
+                <input class="enviar" type="submit" value="ENTRAR">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

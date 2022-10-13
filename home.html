@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/home.css">
+    <link rel="stylesheet" href="assets/style/menu.css">
+    <link rel="stylesheet" href="assets/style/rodape.css">
+    <link rel="stylesheet" href="assets/style/geral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon/logo_icon.ico" type="image/x-icon">
+    <title>PIRITUBA - home</title>
+</head>
+<body>
+    <header>
+        <div class="proporcao-menu logo-pagina-inicial" >
+            <a href="home.html"><img src="icon/LOGO.png" alt="logo"></a>
+        </div>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu" class="overlay-button"><img class="form_bt_menu" src="icon/menu.png" alt="imagem botão menu"></label>
+        <script src="assets/scripts/menu.js" defer></script>
+        <div class="blur-fundo"></div>
+        <nav class="proporcao-menu abas-pagina-inicial">
+            <ul class="itens-menu">
+                <li><a href="home.html" id="home"><span>01</span> home</a></li>
+                <li><a href="bairro.html" id="bairro"><span>02</span> bairro</a></li>
+                <li><a href="destaques.html" id="destaques"><span>03</span> destaques</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="informações infos">
+            <h2>COMO É VIAJAR PARA:</h2>
+            <h1>SÃO PAULO</h1>
+            <p class="texto">São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Há prédios simbólicos como a catedral neogótica, o Edifício Martinelli, um arranha-céu inaugurado em 1929, e o Edifício Copan, com suas linhas curvas projetadas pelo arquiteto modernista Oscar Niemeyer. A igreja em estilo colonial do Pátio do Colégio marca o local onde os padres jesuítas fundaram a cidade em 1554.</p>
+            <p class="fonte">Fonte: www.cidade-brasil.com.br</p>
+        </article>
+        <article id="btn-infos">
+            <button class="infos" id="explorar"><img class="img-btn" src="image/site_img/mapa_btn.png" alt="botão explorar São Paulo"></button>
+        </article>
+        <script>
+            let explorar = document.getElementById('explorar')
+            explorar.addEventListener('click', () => {
+                open('https://goo.gl/maps/hnmrjYbqPhAuPkdw9')
+            })
+        </script>
+        
+    </main>
+    <footer>
+        <section>
+            <div>
+                <img src="icon/LOGO_rodape.png" alt="">
+            </div>
+            <div>
+                <h2>Páginas</h2>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="bairro.html">bairro</a></li>
+                    <li><a href="destaques.html">destaques</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Sobre o site</h2>
+                <p>
+                    Site criado atraves do projeto dado pela academia de PicPay da escola Geminare. Intuito do site, é mostrar os conceitos aprendidos em aula e falar um pouco sobre o bairro que você mora.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/italorizzo" target="_blank"><img src="icon/github.png" alt=""></a>
+                <button onclick="contato()">contato</button>
+                <script>
+                    function contato(){
+                        open("mailto:italo.rizzo@germinare.org.br?subject=Contato do Site do Bairro")
+                    }
+                </script>
+            </div>
+        </section>
+        <section>
+            <span>© 2022 Copyright - Ítalo Rizzo</span>
+        </section>
+    </footer>
+</body>
+</html>

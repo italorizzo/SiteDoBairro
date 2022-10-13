@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/bairro+.css">
+    <link rel="stylesheet" href="assets/style/menu.css">
+    <link rel="stylesheet" href="assets/style/rodape.css">
+    <link rel="stylesheet" href="assets/style/geral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon/logo_icon.ico" type="image/x-icon">
+    <script src="assets/scripts/imagens.js" defer></script>
+    <script src="assets/scripts/img.js" defer></script>
+    <title>PIRITUBA - bairro</title>
+    <!--Ajustar a resposividade
+        Colocar tipo de serviço
+    -->
+</head>
+<body>
+    <section class="divisão_menu">
+        <header class="menu parte_menu">
+            <div class="proporcao-menu logo-pagina-inicial" >
+                <a href="home.html"><img src="icon/LOGO.png" alt="logo"></a>
+            </div>
+            <input type="checkbox" id="bt_menu">
+            <label for="bt_menu" class="overlay-button"><img class="form_bt_menu" src="icon/menu.png" alt="imagem botão menu"></label>
+            <script src="assets/scripts/menu.js" defer></script>
+            <div class="blur-fundo"></div>
+            <div class="proporcao-menu abas-pagina-inicial">
+                <ul class="itens-menu">
+                    <li><a href="home.html" id="home"><span>01</span> home</a></li>
+                    <li><a href="bairro.html" class="encontro" id="bairro"><span>02</span> bairro</a></li>
+                    <li><a href="destaques.html" id="destaques"><span>03</span> destaques</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="titulo_bairro parte_menu">
+            <h1>pirituba</h1>
+            <button class="btn_voltar">Voltar</button>
+            <script>
+                let btn_voltar = document.querySelector('.btn_voltar')
+                btn_voltar.addEventListener('click', () => {
+                    open('bairro.html', '_self')
+                })
+            </script>
+        </div>
+        <div class="indice parte_menu">
+            <div><a href="#história">1. História</a></div>
+            <div><a href="#informações">2. Informações Demográficas</a>
+                <ol>
+                    <li><a href="#morarPirituba">Porque morar em Pirituba</a></li>
+                    <li><a href="#indicesPirituba">Indices de Pirituba</a></li>
+                </ol>
+            </div>
+            <div><a href="#lazer">3. Lazer</a></div>
+            <div><a href="#ensino">4. Ensino</a></div>
+            <div><a href="#importantes">5. Importantes</a></div>
+        </div>
+    </section>
+    <div class="banner-pirituba">
+        <div class="imagem-pirituba"></div>
+    </div>
+    <main class="conteúdo">
+       <section class="seções história" id="história">
+            <div class="informações_texto texto_história">
+                <div>
+                    <h2>História</h2>
+                    <p class="texto">Contempla os distritos de São Domingos, Pirituba e Jaraguá, onde se encontra o ponto mais alto da cidade de São Paulo, o Pico do Jaraguá, com 1135 metros de altura.
+                        O nome Pirituba vem da junção da palavra “piri”, que significa vegetação de brejo na língua tupi, com “tuba”, que significa “muito” na mesma língua. Como os donos dessas propriedades tinham influência política, foi construída uma estação de trem, em 1885, para receber os carregamentos que iam para o porto de Santos.
+                        Em 1922, com a morte do proprietário da Fazenda Barreto, as terras foram partilhadas entre os seus herdeiros. As duas vilas que surgiram se somaram ao núcleo populacional inicial existente nos arredores da estação e juntas foram responsáveis pelo desenvolvimento do bairro. Anos mais tarde, outras partes da Fazenda Barreto foram loteadas surgindo assim a Vila Bonilha, Vila Zatt, Vila Maria Trindade, Vila Mirante e Jardim São José.</p>
+                    <p class="fonte">Fonte: <a href="https://www.pirituba.net/pirituba/" target="_blank">pirituba.net</a></p>
+                </div>
+            </div>
+            <div class="img">
+                <div class="imagem1"></div>
+            </div>
+       </section>
+       <section class="seções informações" id="informações">
+            <section class="informações2">
+                <div class="informações_texto texto_demograficas" id="morarPirituba">
+                    <div>
+                        <h2>Informações demográficas</h2>
+                        <h3>Por que morar em Pirituba?</h3>
+                        <p class="texto texto1">A compra de apartamento em Pirituba está ficando cada vez mais comum, uma vez que a região se encontra em constante desenvolvimento. Além disso, oferece locomoção facilitada para seus moradores: desde transporte público, como linhas da CPTM, até rodovias para quem prefere utilizar veículo particular.
+                        </p>
+                        <p class="texto texto2">Morar em um dos imóveis de Pirituba é viver em um distrito com IDH (Índice de Desenvolvimento Humano) de 0,841 — índice considerado elevado pelos critérios do IBGE. Além disso, a região possui várias ruas arborizadas e tranquilas, aumentando o conforto de seus moradores, além de ter uma renda média de R$ 4.200,00
+                        </p>
+                        <p class="fonte">Fonte: <a href="https://www.pirituba.net/pirituba/" target="_blank">fazerpergunta.com</a></p>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="imagem2"></div>
+                </div>
+            </section>
+            <section class="indicesPirituba" id="indicesPirituba">
+                <div class="mapa mapa1">
+                    <img src="image/site_img/mapa.png" alt="">
+                    <div>
+                        <h3 class="tituloMapa">Idade média da população</h3>
+                        <p class="textoMapa">Pirituba tem um indice de crescimento em idade média da população para 2030 em  relação a 2014.</p>
+                    </div>
+                </div>
+                <div class="indices">
+                    <ul>
+                        <li>
+                            <h3 class="tituloIndice">Habitantes:</h3>
+                            <p class="textoIndice">174.832 hab</p>
+                        </li>
+                        <li>
+                            <h3 class="tituloIndice">Área:</h3>
+                            <p class="textoIndice">17,1 km²</p>
+                        </li>
+                        <li>
+                            <h3 class="tituloIndice">Densidade:</h3>
+                            <p class="textoIndice">95,73 hab/ha</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mapa mapa2">
+                    <img src="image/site_img/mapa-2.png" alt="">
+                    <div>
+                        <h3 class="tituloMapa">Crescimento Populacional</h3>
+                        <p class="textoMapa">Pirituba tem uma taxa de crescimento da população de mais de 1% até 2030.</p>
+                    </div>
+                </div>
+            </section>
+            <button class="saiba_mais">MAIS INFORMAÇÕES</button>
+            <span class="fonteInformações">Fonte: produtos2.seade.gov.br</span>
+        </section>
+        <section class="seções lazer" id="lazer">
+            <div class="informações_texto texto_lazer mapas" id="lazerPirituba">
+                <h2>Lazer</h2>
+                <ul class="mapasInformações">
+                    <li>
+                        <table id="centroEsportivo">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/centro-esportivo.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>Centro Esportivo</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg1" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14637.467626680027!2d-46.74900056626121!3d-23.483290404196527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sesportivos%20em%20Pirituba!5e0!3m2!1spt-BR!2sbr!4v1662917248471!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img1.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="igrejas">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/igreja.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>igrejas</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg1"colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7318.89786941726!2d-46.74898052658571!3d-23.480334098411618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sigrejas%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663199265596!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img2.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="parques">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/parque-natural.png">
+                                </td>
+                                <td>
+                                    <h3>Parques</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg1" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29273.64751133553!2d-46.75306889897834!3d-23.489090691754996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparques%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663199214978!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img3.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <button onclick="mudarImg()" class="ativo btn saiba_mais">mostrar imagens</button>
+            </div>
+        </section>
+        <section class="seções ensino" id="ensino">
+            <div class="informações_texto texto_lazer mapas" id="lazerPirituba">
+                <h2>Ensino</h2>
+                <ul class="mapasInformações">
+                    <li>
+                        <table id="universidades">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/universidade.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>universidades</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg2" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58534.83234732634!2d-46.76445263251639!3d-23.51713901074801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1suniversidades%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663923890457!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img4.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="escolas">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/escola.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>escolas</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg2" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14637.859243875835!2d-46.7478137261276!3d-23.47976187447458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sescolas%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663923926652!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img5.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="faculdades">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/faculdade.png">
+                                </td>
+                                <td>
+                                    <h3>faculdades</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg2" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14637.863666465548!2d-46.74781372903623!3d-23.479722023420827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfaculdades%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663923958562!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img6.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <button onclick="mudarImg2()" class="ativo2 btn2 saiba_mais">mostrar imagens</button>
+            </div>
+        </section>
+        <section class="seções importantes" id="importantes">
+            <div class="informações_texto texto_lazer mapas" id="lazerPirituba">
+                <h2>Importantes</h2>
+                <ul class="mapasInformações">
+                    <li>
+                        <table id="onibus">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/transporte-publico.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>onibus</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg3" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14638.163986873835!2d-46.76012919509623!3d-23.477015748181795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sponto%20de%20onibus%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663924099512!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img7.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="casasRepouso">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/casa-de-repouso.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>Casas de repouso</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg3" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14638.172831243632!2d-46.760129200913596!3d-23.476936044511607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scasa%20de%20repouso%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663924197235!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img8.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="hospitais">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/hospitais.png">
+                                </td>
+                                <td>
+                                    <h3>Hospitais</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg3" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58534.83234732634!2d-46.76445263251639!3d-23.51713901074801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitais%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663939182693!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img9.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <ul class="mapasInformações">
+                    <li>
+                        <table id="trem">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/trem.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>Trem</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg3" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14637.94306990498!2d-46.744071626127926!3d-23.47900652436789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slinha%20de%20trem%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663939239977!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img10.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="comércioLocal">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/loja-online.png" alt="">
+                                </td>
+                                <td>
+                                    <h3>comércio local</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg3" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14637.947492384092!2d-46.74407162903655!3d-23.47896667310076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scomercio%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663939326301!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img11.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table id="restaurantes">
+                            <tr>
+                                <td class="icon">
+                                    <img src="icon/restaurante.png">
+                                </td>
+                                <td>
+                                    <h3>restaurantes</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="mapasImg mapasImg3" colspan="2">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14637.95191485743!2d-46.74407163194519!3d-23.478926821822363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurante%20em%20pirituba!5e0!3m2!1spt-BR!2sbr!4v1663939407858!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <img src="image/site_img/img/img12.png" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <button onclick="mudarImg3()" class="ativo3 btn3 saiba_mais">mostrar imagens</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/italorizzo" target="_blank"><img src="icon/github.png" alt=""></a>
+    </footer>
+</body>
+</html>

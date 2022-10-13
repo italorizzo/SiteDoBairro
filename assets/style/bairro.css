@@ -1,0 +1,95 @@
+body{
+    background-image: url(../../image/site_img/background-pirituba.png);
+}
+.itens-menu li:nth-child(2){
+    border-bottom: 3px solid white;
+}
+.conteúdo{
+    font-weight: lighter;
+
+    margin: auto;
+    width: 80%;
+}
+.infos{
+    position: relative;
+    animation: entradaInfo 1s;
+}
+table{
+    margin-top: 5vw;
+}
+.mapa{
+    position: relative;
+    text-align: center;
+}
+iframe{
+    border-radius: 4px;
+    top: calc(50% - 12vw);
+    width: 35vw;
+    height: 23vw;
+}
+.fonte-maps{
+    color: #f4f4f4;
+    bottom: 3.5vw;
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 2vw;
+    font-size: 1vw;
+}
+.informações{
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 50%;
+    vertical-align: middle;
+    color: #f4f4f4;
+    font-weight: lighter;
+}
+.informações h2{
+    font-weight: lighter;
+    font-size: 2.5vw;
+    letter-spacing: 0.5vw;
+}
+.informações p{
+    width: 90%;
+    line-height: 2vw;
+}
+.texto{
+    color: #D0D6F9;
+    font-size: 1.3vw;
+}
+.texto p{
+    width: 10%;
+}
+.fonte > a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1vw;
+}
+
+@media(max-width: 1000px){
+    .informações h2{
+        font-size: 25px;
+    }
+    .informações p{
+        font-size: 20px;
+        line-height: 30px;
+    }       
+    .conteúdo{
+        padding-top: 70px;
+    }
+
+    .infos{
+        display: block;
+    }
+}
+
+@media(max-width: 600px){
+    .informações h2{
+        font-size: 20px;
+    }
+    .informações p{
+        font-size: 15px;
+    }
+}   
+@media(min-width: 1000px){
+    footer{
+        position: absolute !important;
+    }
+}
