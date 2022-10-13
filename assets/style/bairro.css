@@ -75,10 +75,11 @@ iframe{
         margin-bottom: 4vw;
     }
     .informações h2{
-        font-size: 25px !important;
+        font-size: 30px !important;
     }
     .informações p, .fonte a{
-        font-size: 13px !important;
+        width: 100% !important;
+        font-size: 17px !important;
         line-height: 30px;
     }       
     .conteúdo{
@@ -86,7 +87,7 @@ iframe{
     }
     .infos{
         display: block;
-        width: 100%;
+        width: 100% !important;
     }
     .infos iframe{
         width: 100%;
@@ -94,7 +95,7 @@ iframe{
         min-height: 300px;
     }
     .saiba_mais{
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     footer{
         bottom: -5vw !important;

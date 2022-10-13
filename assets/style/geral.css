@@ -8,9 +8,9 @@ body{
 }
 .saiba_mais{
     width: 10vw;
-    min-width: 100px;
+    min-width: 150px;
     height: 2.5vw;
-    min-height: 30px;
+    min-height: 50px;
 
     text-transform: uppercase;
     letter-spacing: 2px;
