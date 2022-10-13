@@ -14,8 +14,15 @@ body{
     position: relative;
     animation: entradaInfo 1s;
 }
-table{
+.conteúdo section{
     margin-top: 5vw;
+    width: 100%;
+}
+section article{
+    vertical-align: middle;
+}
+section div > article{
+    display: inline-block;
 }
 .mapa{
     position: relative;
@@ -64,22 +71,40 @@ iframe{
 }
 
 @media(max-width: 1000px){
-    .informações h2{
-        font-size: 25px;
+    .informações{
+        margin-bottom: 4vw;
     }
-    .informações p{
-        font-size: 20px;
+    .informações h2{
+        font-size: 25px !important;
+    }
+    .informações p, .fonte a{
+        font-size: 13px !important;
         line-height: 30px;
     }       
     .conteúdo{
         padding-top: 70px;
     }
-
     .infos{
         display: block;
+        width: 100%;
+    }
+    .infos iframe{
+        width: 100%;
+        height: 50vw;
+        min-height: 300px;
+    }
+    .saiba_mais{
+        font-size: 10px !important;
+    }
+    footer{
+        bottom: -5vw !important;
     }
 }
-
+@media(max-width: 1000px){
+    td{
+        width: 100%;
+    }
+}
 @media(max-width: 600px){
     .informações h2{
         font-size: 20px;
