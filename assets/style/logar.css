@@ -6,6 +6,7 @@ body{
     margin: 0;
     background-image: url(../../image/site_img/logar-background.png);
     background-color: #0B0D17;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,8 +15,8 @@ main{
 }
 .areaLogar{
     border-radius: 0.3vw;
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: calc(50% - 45vw/2);
     left: 30%;
     width: 40%;
     height: 45vw;
@@ -49,6 +50,7 @@ main{
     border-bottom: 2px solid lightgray;
     width: 90%;
     padding: 0.7vw;
+    font-size: 1.2vw;
     margin-top: 1vw;
 }
 .enviar{
@@ -81,6 +83,30 @@ main{
     font-size: 10vw;
     animation: 1s texto;
     color: #F2F2F2;
+}
+@media(max-width: 1200px){
+    .nome > div{
+        display: block;
+    }
+    .areaLogar{
+        top: calc(50% - 55vw/2);
+        height: 55vw;
+    }
+}
+@media(max-width:550px){
+    .areaLogar{
+        left: 0;
+        width: 100%;
+        top:0;
+        height: 40%;
+    }
+    .cadastro input{
+        font-size: 10px;
+    }
+    .titulo img{
+        width: 30%;
+        margin: 2vw;
+    }
 }
 @keyframes texto{
     0%{
