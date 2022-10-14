@@ -16,32 +16,38 @@
     <title>PIRITUBA</title>
 </head>
 <body>
-    <main class="areaLogar">
-        <div class="titulo">
-            <h1>criar conta</h1>
+<main>
+    <div class="areaLogar">
+        <div>
+            <div class="titulo">
+                <img src="icon/LOGO_preto.png" alt="">
+            </div>
+            <form class="cadastro" >
+                <div>
+                    <div class="nome">
+                        <div>
+                            <input type="text" placeholder="Nome" name="nome" required>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Sobrenome" name="sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="Email" name="email" id="email" required>
+                    </div>
+                    <div class="senha senha2">
+                        <input onchange="confereSenha()" type="password" placeholder="Digite uma senha" minlength="8" name="senha">
+                    </div>
+                    <div class="senha senha1">
+                        <input onchange="confereSenha()" placeholder="Confirme a senha" type="password" name="confirmar">
+                    </div>
+                </div>
+                <div>
+                    <input class="enviar" type="submit" value="ENTRAR">
+                </div>
+            </form>
         </div>
-        <form class="cadastro" >
-            <div class="nome">
-                <div>
-                    <input type="text" placeholder="NOME" name="nome" required>
-                </div>
-                <div>
-                    <input type="text" placeholder="SOBRENOME" name="sobrenome" required>
-                </div>
-            </div>
-            <div class="email">
-                <input type="email" placeholder="EMAIL" name="email" id="email" required>
-            </div>
-            <div class="senha senha2">
-                <input onchange="confereSenha()" type="password" placeholder="DIGITE UMA SENHA" minlength="8" name="senha">
-            </div>
-            <div class="senha senha1">
-                <input onchange="confereSenha()" placeholder="REPITA A SENHA" type="password" name="confirmar">
-            </div>
-            <div>
-                <input class="enviar" type="submit" value="ENTRAR">
-            </div>
-        </form>
-    </main>
+    </div>
+</main>
 </body>
 </html>
