@@ -6,12 +6,24 @@ body{
 }
 .conteúdo{
     font-weight: lighter;
+    width: 100%;
+}
+.conteúdo section{
+    margin-top: 5vw;
     margin: auto;
     width: 90%;
 }
-table{
-    margin-top: 5vw;
+.conteúdo section div:nth-child(2){
+    width: 100%;
+    display: table;
 }
+.infos{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    text-align: justify;
+}
+
 .video-jaraguá h2{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: lighter;
@@ -22,30 +34,27 @@ table{
 .video-jaraguá iframe{
     border-radius: 4px;
 }
+
 .video{
     width: 100%;
     height: 50vw;
 }
-.mapa{
-    position: relative;
-    text-align: center;
-}
 iframe{
     border-radius: 4px;
     top: calc(50% - 12vw);
-    width: 100%;
     height: 30vw;
+    width: 100%;
 }
 .fonte-maps{
     color: #f4f4f4;
     bottom: 3.5vw;
     font-family: 'Barlow Condensed', sans-serif;
     line-height: 2vw;
+    text-align: center;
     font-size: 1vw;
 }
 .informações{
     font-family: 'Barlow Condensed', sans-serif;
-    width: 50%;
     vertical-align: middle;
     color: #f4f4f4;
     font-weight: lighter;
@@ -66,15 +75,42 @@ iframe{
 }
 
 @media(max-width: 1000px){
+    .conteúdo section{
+        width: 100%;
+        margin-top: -70px;
+    }
+    .infos{
+        display: block;
+        text-align: center;
+        padding: 2vw 0 2vw 0;
+        width: 100%;
+    }
     .video-jaraguá h2{
-        font-size: 25px;
+        font-size: 30px;
+        padding-left: 3vw;
+    }
+    .video-jaraguá iframe{
+        height: 57vw;
     }
     .informações p{
-        font-size: 20px;
+        margin: auto;
+        font-size: 18px;
         line-height: 30px;
+        padding-bottom: 2vw;
     }       
     .conteúdo{
         padding-top: 70px;
+    }
+    .fonte-maps{
+        font-size: 15px;
+    }
+    .mapa div{
+        width: 100%;
+        text-align: center;
+    }
+    .mapa iframe{
+        width: 90%;
+        height: 50vw;
     }
 }
 
