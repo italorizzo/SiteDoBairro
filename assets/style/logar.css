@@ -97,14 +97,14 @@ main{
     .areaLogar{
         left: 0;
         width: 100%;
-        top:0;
-        height: 40%;
+        top: calc(50% - 400px/2);
+        height: 400px;
     }
     .cadastro input{
         font-size: 10px;
     }
     .titulo img{
-        width: 30%;
+        width: 50%;
         margin: 2vw;
     }
 }
