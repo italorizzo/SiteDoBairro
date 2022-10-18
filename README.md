@@ -18,7 +18,7 @@
 
 • Deverá ter fontes externas, de no mínimo 2 famílias diferentes 💚
 
-• Tags textuais 🤔
+• Tags textuais 💚
 
 • Devera ter botões (clicáveis) 💚
 
@@ -28,7 +28,7 @@
 
 • Usar medidas relativas (quando necessário) 💚
 
-• Layout com Flex e/ou Grid 🤔
+• Layout com Flex e/ou Grid 💚
 
 • Videos 💚
 

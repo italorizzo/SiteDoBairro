@@ -6,6 +6,7 @@ body{
 }
 .conteúdo{
     font-weight: lighter;
+    display: grid;
     width: 100%;
 }
 .conteúdo section{
@@ -13,6 +14,7 @@ body{
     margin: auto;
     width: 90%;
 }
+
 .conteúdo section div:nth-child(2){
     width: 100%;
     display: table;
