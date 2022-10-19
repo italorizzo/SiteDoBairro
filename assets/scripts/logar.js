@@ -12,7 +12,7 @@ function confereSenha(){
     }
 }
 function tentativa(){
-    if (confimar.value === senha.value){
+    if (document.querySelector('input[name=nome]').value != '' && document.querySelector('input[name=senha]').value != '' && document.querySelector('input[name=confirmar]').value != '' && document.querySelector('input[name=email]').value != '' && document.querySelector('input[name=sobrenome]').value != ''){
         ola()
     }
 }
