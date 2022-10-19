@@ -7,9 +7,13 @@ function confereSenha(){
 
     if (confimar.value === senha.value){
         confimar.setCustomValidity('');
-        ola()
     }else{
         confimar.setCustomValidity('As senhas não conferem')
+    }
+}
+function tentativa(){
+    if (confimar.value === senha.value){
+        ola()
     }
 }
 function ola(){
