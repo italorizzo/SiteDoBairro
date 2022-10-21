@@ -3,6 +3,7 @@ footer{
     bottom: -5vw;
     width: 100%;
     color: white;
+    z-index: 3;
     font-family: 'Barlow Condensed', sans-serif;
 }
 footer section:nth-child(1){

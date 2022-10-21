@@ -124,7 +124,7 @@ html {
     line-height: 2vw;
 }
 .texto_história div{
-    margin-left: 5vw;
+    margin-left: 7vw;
     width: 55vw;
     font-size: 1.5vw;
 }
@@ -161,7 +161,7 @@ html {
     float: right;
 }
 .texto_demograficas div{
-    margin-right: 5vw;
+    margin-right: 7vw;
     width: 55vw;
     font-size: 1.5vw;
 }
@@ -322,14 +322,5 @@ article{
     }
     100%{
         opacity: 1;
-    }
-}
-@media(max-width:1000px){
-    .imagem-pirituba{
-        padding-top: 30%;
-        padding-bottom: 30%;
-    }
-    .divisão_menu{
-        height: 60vw;
     }
 }
